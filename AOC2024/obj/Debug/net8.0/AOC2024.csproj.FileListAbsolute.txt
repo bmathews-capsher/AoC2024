@@ -1,0 +1,15 @@
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\bin\Debug\net8.0\AOC2024.exe
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\bin\Debug\net8.0\AOC2024.deps.json
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\bin\Debug\net8.0\AOC2024.runtimeconfig.json
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\bin\Debug\net8.0\AOC2024.dll
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\bin\Debug\net8.0\AOC2024.pdb
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\obj\Debug\net8.0\AOC2024.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\obj\Debug\net8.0\AOC2024.AssemblyInfoInputs.cache
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\obj\Debug\net8.0\AOC2024.AssemblyInfo.cs
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\obj\Debug\net8.0\AOC2024.csproj.CoreCompileInputs.cache
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\obj\Debug\net8.0\AOC2024.dll
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\obj\Debug\net8.0\refint\AOC2024.dll
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\obj\Debug\net8.0\AOC2024.pdb
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\obj\Debug\net8.0\AOC2024.genruntimeconfig.cache
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\obj\Debug\net8.0\ref\AOC2024.dll
+c:\Users\brian\Documents\Programming Projects\AoC2024\AOC2024\bin\Debug\net8.0\Input\Day01A.txt
