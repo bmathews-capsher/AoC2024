@@ -14,7 +14,7 @@ namespace AOC2024
                         List<string> data = new(File.ReadAllLines("Input\\Day" + day + testFile + ".txt"));
                         
                         MethodInfo m = assembly.GetType(typeName).GetMethod("Solve");
-                        m.Invoke(dayInstance, new Object[] { data });
+                        m.Invoke(dayInstance, [data]);
                 }
         }
 }

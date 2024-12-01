@@ -4,10 +4,7 @@ namespace AOC2024
         {
                 public void Solve(List<string> data)
                 {
-                        foreach (string s in data)
-                        {
-                                Console.WriteLine(s);
-                        }
+                        Console.WriteLine("working");
                 }
         }
 }
