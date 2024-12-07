@@ -12,8 +12,6 @@ namespace AOC2024
                         char[][] map = Transform(data);
                         int[][] movement = new int[map.Length][];
                         for(int i = 0; i < map.Length; i++) movement[i] = new int[map[i].Length];
-                        bool[][] addedBlocks = new bool[map.Length][];
-                        for (int i = 0; i < map.Length; i++) addedBlocks[i] = new bool[map[i].Length];
 
                         (int i, int j) pos = FindStart(map);
                         Dir dir = Dir.U;
@@ -205,20 +203,6 @@ namespace AOC2024
                         }
 
                         return -1;
-                }
-
-                private void PrintMap(char[][] map)
-                {
-                        for(int i = 0; i < map.Length; i++)
-                        {
-                                for(int j = 0; j < map[i].Length; j++)
-                                {
-                                        Console.Write(map[i][j]);
-                                }
-
-                                Console.WriteLine();
-                        }
-                        Console.WriteLine();
                 }
         }
 }
