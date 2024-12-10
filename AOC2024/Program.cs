@@ -1,10 +1,10 @@
 ﻿namespace AOC2024
 {
-        public class AOC2024
+    public class AOC2024
+    {
+        public static void Main(string[] args) 
         {
-                public static void Main(string[] args) 
-                {
-                        Runner.Run("08", false, "B");
-                }
+            Runner.Run("09", false, "B");
         }
+    }
 }
