@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Reflection;
 
 namespace AOC2024
@@ -11,10 +12,15 @@ namespace AOC2024
                         string typeName = "AOC2024.Day" + day + part;
                         object dayInstance = assembly.CreateInstance(typeName);
 
-                        List<string> data = new(File.ReadAllLines("Input\\Day" + day + testFile + ".txt"));
                         
                         MethodInfo m = assembly.GetType(typeName).GetMethod("Solve");
+                        Stopwatch stopwatch = new();
+                        stopwatch.Start();
+                        List<string> data = new(File.ReadAllLines("Input\\Day" + day + testFile + ".txt"));
                         m.Invoke(dayInstance, [data]);
+                        stopwatch.Stop();
+
+                        Console.WriteLine("Elapsed Time: " + stopwatch.Elapsed);
                 }
         }
 }
