@@ -44,8 +44,6 @@ namespace AOC2024
                 }
             }
 
-            //TODO
-
             Dictionary<((int r, int c) pos, Dir dir), long> toVisit = new();
             toVisit.Add((start, Dir.R), 0);
             scores[start.r, start.c, (int)Dir.R] = 0;
