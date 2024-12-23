@@ -19,12 +19,9 @@ namespace AOC2024
                 map[parts[1]].Add(parts[0]);
             }
 
-            HashSet<string> allNodes = new();
-            allNodes.UnionWith(map.Keys);
-            HashSet<string> maxConnected = FindMaxConnected(new(), allNodes, map);
+            HashSet<string> maxConnected = FindMaxConnected(new(), [.. map.Keys], map);
 
-            List<string> sortedGroup = new();
-            sortedGroup.AddRange(maxConnected);
+            List<string> sortedGroup = [.. maxConnected];
             sortedGroup.Sort();
 
             Console.WriteLine(string.Join(',', sortedGroup));
@@ -42,24 +39,19 @@ namespace AOC2024
                 }
             }
 
-            HashSet<string> newConnected = new();
-            newConnected.UnionWith(connected);
+            HashSet<string> maxResult = [.. connected];
 
-            HashSet<string> newRemaining = new();
-            newRemaining.UnionWith(fullyConnected);
-
-            HashSet<string> maxResult = new();
-            maxResult.UnionWith(connected);
-
-            foreach (string location in fullyConnected)
+            while(fullyConnected.Count > 0)
             {
-                newConnected.Add(location);
-                newRemaining.Remove(location);
+                string location = fullyConnected.First();
 
-                var newResult = FindMaxConnected(newConnected, newRemaining, map);
+                fullyConnected.Remove(location);
+                connected.Add(location);
+
+                var newResult = FindMaxConnected(connected, fullyConnected, map);
                 if(newResult.Count > maxResult.Count) maxResult = newResult;
 
-                newConnected.Remove(location);
+                connected.Remove(location);
             }
 
             return maxResult;
